@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+:root {
+    --corbg: #f5f5f5;
+    --corwh: #f1fcde;
+    --corbk: #090e01;
+    --corlg: #def8af;
+    --cormg: #88cc11;
+    --cordg: #456809;
+
+    --fontprimaria: 'Cairo', sans-serif;
+    --fontsegundaria: 'Montserrat', sans-serif;
+    --transition: all 0.2s linear;
+    --entrelinha: 1.8em;
+    --darkshadow: 0 5px 5px rgba(0, 0, 0, 0.618);
+}
+
+/**********************************/
+/* 1. Estilos Gerais
+/**********************************/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--corwh);
+}
+
+.destaque {
+    color: var(--cordg);
+}
+
+/**********************************/
+/* 2. Navbar
+/*********************************/
+
+.navbar {
+	position: fixed;
+	background: var(--cormg);
+	width: 100%;
+    height: 70px;
+	box-shadow: var(--darkshadow);
+    z-index: 3;
+}
+
+.navbar-header > h1 {
+    font-family: var(--fontprimaria);
+    font-size: 2.5em;
+    padding-left: 20px;
+    margin: 0px;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header__toggle {
+    background: transparent;
+    border: transparent;
+    font-size: 2em;
+    padding-right: 30px;
+    color: var(--cordg);
+    transition: var(--transition);
+}
+
+.navbar-header__toggle:hover {
+    transform: scale(1.2);
+}
+
+.navbar-list {
+    height: 0px;
+    overflow: hidden;
+}
+
+.navbar-icons {
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+
+    .navbar-header__toggle {
+        display: none;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-list {
+        height: auto;
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar-list__link {
+        font-family: var(--fontsegundaria);
+        font-size: 1em;
+        font-weight: 600; 
+        color: var(--cordg);
+        margin-right: 5px;
+        padding-right: 30px;
+    }
+
+    .navbar-list__link:hover {
+        color: var(--corlg);
+        transition: var(--transition);
+    }
+
+    .navbar-icons {
+        display: flex;
+        list-style: none;
+    }
+
+    .navbar-icons__icon {
+        margin-right: 5px;
+        padding-right: 30px;
+        color: var(--cordg);
+        font-size: 1.2em;
+        font-weight: 800;
+    }
+
+    .navbar-icons__icon:hover {
+        color: var(--corlg);
+        transition: var(--transition);
+    }
+
+}
+   
+
+/**********************************/
+/* 3. Intro
+/**********************************/
+
+.div-intro {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.div-intro__img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.div-intro__texto {
+    position: absolute;
+    margin-top: 70vh;
+}
+
+.div-intro__texto > h2 {
+    font-family: var(--fontprimaria);
+    font-size: 1.8em;
+    color: var(--corwh);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.div-intro__texto > p {
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    color: var(--corwh);
+    font-weight: 400;
+    margin-left: 20px;
+    width: 300px;
+    line-height: var(--entrelinha);
+}
+
+/**********************************/
+/* 4. Meu Perfil
+/**********************************/
+
+.section-sobre {
+	background: var(--corlg);
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.section__titulo {
+    font-family: var(--fontprimaria);
+    font-size: 1.8em;
+    padding: 10px;
+    text-align: center;
+}
+
+.sobre-c__img {
+	width: 100%;
+	height: auto;
+	box-shadow: var(--darkshadow);
+    object-fit: cover;
+}
+
+.sobre-texto__titulo {
+	font-family: var(--fontprimaria);
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.sobre-texto {
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    font-weight: 500;
+    margin-left: 20px;
+    line-height: var(--entrelinha);
+}
+
+@media screen and (min-width: 768px) {
+	.sobre-c {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+
+	.sobre-texto {
+		flex: 6 1 1em;
+		margin-left: 1.5em;
+	}
+
+	.sobre-c__img {
+		flex: 1 1 1em;
+		margin-right: 1.5em;
+	}
+}
+
+/**********************************/
+/* 5. Galeria
+/**********************************/
+
+.section-galeria {
+    background-color: var(--cormg);
+    width: 100%;
+    margin: 0px;
+}
+
+.section-gale__titulo {
+    font-family: var(--fontprimaria);
+    font-size: 1.8em;
+    padding: 10px;
+    text-align: center;
+}
+
+.trabalhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 20px;
+}
+
+.trabalho-artigo + .trabalho-artigo {
+    margin-top: 16px;
+}
+
+.trabalho_titulo {
+    font-family: var(--fontprimaria);
+    font-size: 1.3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.trabalho_descricao {
+    width: 25em;
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    font-weight: 500;
+    line-height: var(--entrelinha);
+}
+
+
+
+
+
+
+
+
+/**********************************/
+/* 7. Rodape
+/**********************************/
+
+.rodape {
+    background-color: var(--corbk);
+    height: 30px;
+    font-family: vwvar(--fontsegundaria);
+    font-size: .8em;
+    color: var(--corbg);
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+}
