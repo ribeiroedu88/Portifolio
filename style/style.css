@@ -331,7 +331,6 @@ body {
 @media screen and (max-width: 667px) {
     .trabalho_descricao {
         justify-content: space-between;
-        width: 300px;
     }
 
     .trabalho-artigo + .trabalho-artigo {
