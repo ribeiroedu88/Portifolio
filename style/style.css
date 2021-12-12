@@ -246,16 +246,17 @@ body {
 }
 
 /**********************************/
-/* 5. Galeria
+/* 5. Trabalhos
 /**********************************/
 
-.section-galeria {
+.section-trabalho {
     background-color: var(--cormg);
     width: 100%;
     margin: 0px;
+    padding-bottom: 20px;
 }
 
-.section-gale__titulo {
+.section-trabalho__titulo {
     font-family: var(--fontprimaria);
     font-size: 1.8em;
     padding: 10px;
@@ -305,7 +306,7 @@ body {
 
 .trabalho_titulo--redes::before {
     content: "\f3e0";
-    padding: 6px 12px;
+    padding: 6px 12px;  
 }
 
 .trabalho_titulo--motion::before {
@@ -317,10 +318,27 @@ body {
     padding: 5px 10px;
 }
 
+@media screen and (min-width: 768px) {
+    .trabalhos {
+        justify-content: space-between;
+    }
 
+    .trabalho-artigo + .trabalho-artigo {
+        margin-top: 0px;
+    }
+}
 
+@media screen and (max-width: 667px) {
+    .trabalho_descricao {
+        justify-content: space-between;
+        width: 275px;
+        margin-right: 30px;
+    }
 
-
+    .trabalho-artigo + .trabalho-artigo {
+        margin-top: 0px;
+    }
+}
 
 /**********************************/
 /* 7. Rodape
