@@ -335,6 +335,7 @@ body {
 
 .section-galeria {
     background-color: var(--cordg);
+    height: 300px;
 }
 
 .navbar-galeria {
