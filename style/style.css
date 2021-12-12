@@ -328,8 +328,46 @@ body {
     }
 }
 
+
 /**********************************/
-/* 7. Rodape
+/* 8. Galeria
+/**********************************/
+
+.section-galeria {
+    background-color: var(--cordg);
+}
+
+.navbar-galeria {
+    display: flex;
+    background-color: var(--corlg);
+    height: 20px;
+    padding: 10px;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar-galeria > h4 {
+    font-family: var(--fontprimaria);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.navbar-galeria > a {
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/**********************************/
+/* 9. Rodape
 /**********************************/
 
 .rodape {
