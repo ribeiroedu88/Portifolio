@@ -336,6 +336,7 @@ body {
 .section-galeria {
     background-color: var(--cordg);
     height: auto;
+    align-items: center;
 }
 
 .navbar-galeria {
@@ -363,7 +364,8 @@ body {
 
 @media screen and (max-width: 720px) {
     .galeria-item__thumb {
-        width: 100%;
+        width: 97%;
+        margin: 5px;
     }
 }
 
