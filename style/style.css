@@ -282,7 +282,7 @@ body {
 }
 
 .trabalho_descricao {
-    width: 400px;
+    width: 300px;
     font-family: var(--fontsegundaria);
     font-size: .8em;
     font-weight: 500;
@@ -321,17 +321,6 @@ body {
 @media screen and (min-width: 768px) {
     .trabalhos {
         justify-content: space-between;
-    }
-
-    .trabalho-artigo + .trabalho-artigo {
-        margin-top: 0px;
-    }
-}
-
-@media screen and (max-width: 667px) {
-    .trabalho_descricao {
-        justify-content: space-between;
-        width: 250px;
     }
 
     .trabalho-artigo + .trabalho-artigo {
