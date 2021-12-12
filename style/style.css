@@ -360,7 +360,7 @@ body {
     text-transform: uppercase;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 550px) {
     .galeria-item__thumb {
         width: 100%;
     }
