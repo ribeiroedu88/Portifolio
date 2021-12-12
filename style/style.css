@@ -318,7 +318,7 @@ body {
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
     .trabalhos {
         justify-content: space-between;
     }
