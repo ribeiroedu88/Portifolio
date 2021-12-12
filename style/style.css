@@ -332,7 +332,7 @@ body {
     .trabalho_descricao {
         justify-content: space-between;
         width: 275px;
-        margin-right: 30px;
+        margin-right: 10px;
     }
 
     .trabalho-artigo + .trabalho-artigo {
