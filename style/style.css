@@ -275,17 +275,28 @@ body {
 
 .trabalho_titulo {
     font-family: var(--fontprimaria);
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
 }
 
 .trabalho_descricao {
-    width: 25em;
+    width: 300px;
     font-family: var(--fontsegundaria);
     font-size: .8em;
     font-weight: 500;
     line-height: var(--entrelinha);
+}
+
+.trabalho_titulo::before {
+    content: "\f1ea";
+    background-color: var(--corbk);
+    color: var(--corwh);
+    padding: 5px;
+    margin-right: .3em;
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 
