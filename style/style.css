@@ -289,7 +289,7 @@ body {
 }
 
 .trabalho_titulo::before {
-    content: "\f1ea";
+    content: "";
     background-color: var(--corbk);
     color: var(--corwh);
     padding: 5px;
@@ -299,7 +299,23 @@ body {
     font-weight: 900;
 }
 
+.trabalho_titulo--newpapper::before {
+    content: "\f1ea";
+}
 
+.trabalho_titulo--redes::before {
+    content: "\f3e0";
+    padding: 6px 12px;
+}
+
+.trabalho_titulo--motion::before {
+    content: "\f55b";
+}
+
+.trabalho_titulo--fotografia::before {
+    content: "\f083";
+    padding: 5px 10px;
+}
 
 
 
