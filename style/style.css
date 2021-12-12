@@ -231,7 +231,6 @@ body {
 	.sobre-c {
 		display: flex;
 		flex-wrap: wrap;
-        width: 400px;
 		align-items: center;
 	}
 
