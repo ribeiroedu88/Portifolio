@@ -361,7 +361,6 @@ body {
     text-transform: uppercase;
 }
 */
-
 .galeria-item__thumb {
     width: 100%;
 }
@@ -382,6 +381,17 @@ body {
 	}
 }
 
+@media screen and (min-width: 375px) {
+	.section-galeria {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.galeria-item {
+        display: flex;
+		flex: 0 0 50%;
+	}
+}
 
 /**********************************/
 /* 9. Rodape
