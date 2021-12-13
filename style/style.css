@@ -333,10 +333,15 @@ body {
 /* 8. Galeria
 /**********************************/
 
+/* .section-galeria .galeria-item{
+    display: none;
+} */
+
 .section-galeria {
     background-color: var(--cordg);
     padding: 0px;
 }
+
 /*
 .navbar-galeria {
     display: flex;
@@ -361,6 +366,8 @@ body {
     text-transform: uppercase;
 }
 */
+
+
 .galeria-item__thumb {
     width: 100%;
 }
