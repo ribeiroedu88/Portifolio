@@ -412,9 +412,66 @@ body {
 	}
 }
 
+/**********************************/
+/* 9. Redes Sociais
+/**********************************/
+
+/* .section-redes .redes-item{
+    display: none;
+} */
+
+.section-redes {
+    background-color: var(--cormg);
+    padding: 0px;
+}
+
+.redes-item__thumb {
+    width: 100%;
+}
+
+.redes-item > img {
+    display: block;
+}
+
+@media screen and (min-width: 375px) {
+	.section-redes {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.redes-item {
+        display: flex;
+		flex: 0 0 50%;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.section-redes {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.redes-item {
+        display: flex;
+		flex: 0 0 33.3%;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.section-redes {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.redes-item {
+        display: flex;
+		flex: 0 0 25%;
+	}
+}
+
 
 /**********************************/
-/* 9. Rodape
+/* 10. Rodape
 /**********************************/
 
 .rodape {
