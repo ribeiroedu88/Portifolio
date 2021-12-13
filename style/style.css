@@ -333,9 +333,9 @@ body {
 /* 8. Galeria
 /**********************************/
 
-/* .section-galeria .galeria-item{
+.section-galeria .galeria-item{
     display: none;
-} */
+} 
 
 .section-galeria {
     background-color: var(--cordg);
@@ -416,9 +416,9 @@ body {
 /* 9. Redes Sociais
 /**********************************/
 
-/* .section-redes .redes-item{
+.section-redes .redes-item{
     display: none;
-} */
+}
 
 .section-redes {
     background-color: var(--cormg);
@@ -473,7 +473,9 @@ body {
 /* 10. Motion
 /**********************************/
 
-
+.section-motion .motion-item{
+    display: none;
+}
 
 
 
@@ -481,9 +483,9 @@ body {
 /* 11. Fotografia
 /**********************************/
 
-/* .section-foto .foto-item{
+.section-foto .foto-item{
     display: none;
-} */
+}
 
 .section-foto {
     background-color: var(--corlg);
@@ -539,13 +541,35 @@ body {
 /* 10. Rodape
 /**********************************/
 
-.rodape {
+.navbar-rodape {
     background-color: var(--corbk);
-    height: 30px;
-    font-family: vwvar(--fontsegundaria);
-    font-size: .8em;
-    color: var(--corbg);
+    font-family: var(--fontsegundaria);
+    font-size: .9em;
+    font-weight: 400;
     text-align: center;
-    padding: 10px;
-    align-items: center;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+
+.navbar-rodape > p {
+    color: var(--corwh);
+    font-size: .7em;
+}
+
+.rodape-icons {
+    list-style: none;
+    display: flex;
+    margin: 20px 0px;
+    justify-content: center;
+}
+
+.rodape-icons__icon {
+    margin-right: 30px;
+    color: var(--corwh);
+    font-size: 1.6em;
+    transition: var(--transition);
+}
+
+.rodape-icons__icon:hover {
+    color: var(--cormg);
 }
