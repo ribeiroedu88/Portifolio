@@ -469,6 +469,71 @@ body {
 	}
 }
 
+/**********************************/
+/* 10. Motion
+/**********************************/
+
+
+
+
+
+/**********************************/
+/* 11. Fotografia
+/**********************************/
+
+/* .section-foto .foto-item{
+    display: none;
+} */
+
+.section-foto {
+    background-color: var(--corlg);
+    padding: 0px;
+}
+
+.foto-item__thumb {
+    width: 100%;
+}
+
+.foto-item > img {
+    display: block;
+}
+
+@media screen and (min-width: 375px) {
+	.section-foto {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.foto-item {
+        display: flex;
+		flex: 0 0 50%;
+	}
+}
+
+@media screen and (min-width: 720px) {
+	.section-foto {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.foto-item {
+        display: flex;
+		flex: 0 0 33.3%;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.section-foto {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.foto-item {
+        display: flex;
+		flex: 0 0 25%;
+	}
+}
+
 
 /**********************************/
 /* 10. Rodape
