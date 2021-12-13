@@ -369,7 +369,7 @@ body {
     display: block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 375px) {
 	.section-galeria {
 		display: flex;
         flex-wrap: wrap;
@@ -377,22 +377,11 @@ body {
 
 	.galeria-item {
         display: flex;
-		flex: 0 0 25%;
-	}
-
-@media screen and (min-width: 720px) {
-	.section-galeria {
-		display: flex;
-        flex-wrap: wrap;
-	}
-
-	.galeria-item {
-        display: flex;
-		flex: 0 0 25%;
+		flex: 0 0 50%;
 	}
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 720px) {
 	.section-galeria {
 		display: flex;
         flex-wrap: wrap;
@@ -403,6 +392,19 @@ body {
 		flex: 0 0 33.3%;
 	}
 }
+
+@media screen and (min-width: 1300px) {
+	.section-galeria {
+		display: flex;
+        flex-wrap: wrap;
+	}
+
+	.galeria-item {
+        display: flex;
+		flex: 0 0 25%;
+	}
+}
+
 
 /**********************************/
 /* 9. Rodape
