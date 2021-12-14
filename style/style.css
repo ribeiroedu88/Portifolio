@@ -134,6 +134,7 @@ body {
     }
 
     .navbar-list__link {
+        background: none;
         font-family: var(--fontsegundaria);
         font-size: 1em;
         font-weight: 600; 
