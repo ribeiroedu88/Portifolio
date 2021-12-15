@@ -81,7 +81,7 @@ var btn = document.querySelector('#impresso');
 var galeria = document.querySelector('.section-galeria');
 
 btn = addEventListener('click', function(){
-	if (galeria.style.display === 'flex'){
+	if (galeria.style.display === 'block'){
 		galeria.style.display = 'none';
 	}
 		else {

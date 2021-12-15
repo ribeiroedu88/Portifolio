@@ -278,6 +278,7 @@ body {
 	}
 }
 
+
 /**********************************/
 /* 5. Trabalhos
 /**********************************/
@@ -359,9 +360,9 @@ body {
 /* 8. Galeria
 /**********************************/
 
-/* .section-galeria .galeria-item{
+.section-galeria .galeria-item{
     display: none;
-}  */
+} 
 
 .section-galeria {
     background-color: var(--cordg);
