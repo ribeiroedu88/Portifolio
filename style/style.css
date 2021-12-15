@@ -44,6 +44,12 @@ body {
     color: var(--cordg);
 }
 
+.bnt-galeria {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 /**********************************/
 /* 2. Navbar
 /*********************************/
@@ -300,9 +306,11 @@ body {
 
 .trabalho_titulo {
     font-family: var(--fontprimaria);
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 600;
+    color: var(--corwh);
     text-transform: uppercase;
+    text-shadow: 0 1px 2px black;
 }
 
 .trabalho_descricao {
@@ -356,11 +364,6 @@ body {
 /**********************************/
 /* 8. Galeria
 /**********************************/
-
-.section-galeria .galeria-item{
-    display: none;
-} 
-
 .section-galeria {
     background-color: var(--cordg);
     padding: 0px;

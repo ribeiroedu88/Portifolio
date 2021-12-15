@@ -72,6 +72,20 @@ _elements.scrollLinks.forEach(link => {
 	});
 });
 
+
+var btn = document.querySelector('#impressos');
+var galeria = document.querySelector('.section-galeria');
+
+btn.addEventListener('click', function() {
+
+	if(galeria.style.display === 'flex') {
+		galeria.style.display = 'none';
+	} else {
+		galeria.style.display = 'flex';
+	}
+
+});
+
 _elements.toggle.addEventListener("click", () => {
 	_elements.navbarList.classList.toggle("navbar-list--show-links");
 });
