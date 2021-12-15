@@ -72,6 +72,28 @@ _elements.scrollLinks.forEach(link => {
 	});
 });
 
+//*********************************************
+//* Função para mostrar ou escoder portifolio *
+//*********************************************
+
+
+var btn = document.querySelector('#impresso');
+var galeria = document.querySelector('.section-galeria');
+
+btn = addEventListener('click', function(){
+	if (galeria.style.display === 'flex'){
+		galeria.style.display = 'none';
+	}
+		else {
+			galeria.style.display = 'flex';
+		}
+});
+
+
+
+
+
+
 _elements.toggle.addEventListener("click", () => {
 	_elements.navbarList.classList.toggle("navbar-list--show-links");
 });

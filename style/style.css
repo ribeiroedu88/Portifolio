@@ -44,6 +44,16 @@ body {
     color: var(--cordg);
 }
 
+.btn-padrao {
+    background: none;
+    border: none;
+    font-family: var(--fontprimaria);
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /**********************************/
 /* 2. Navbar
 /*********************************/
@@ -165,7 +175,6 @@ body {
         color: var(--corlg);
         transition: var(--transition);
     }
-
 }
    
 
@@ -298,13 +307,6 @@ body {
     margin-top: 16px;
 }
 
-.trabalho_titulo {
-    font-family: var(--fontprimaria);
-    font-size: 1.5em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
 .trabalho_descricao {
     width: 300px;
     font-family: var(--fontsegundaria);
@@ -357,40 +359,14 @@ body {
 /* 8. Galeria
 /**********************************/
 
-.section-galeria .galeria-item{
+/* .section-galeria .galeria-item{
     display: none;
-} 
+}  */
 
 .section-galeria {
     background-color: var(--cordg);
     padding: 0px;
 }
-
-/*
-.navbar-galeria {
-    display: flex;
-    background-color: var(--corlg);
-    height: 20px;
-    padding: 10px;
-    margin: 0px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.navbar-galeria > h4 {
-    font-family: var(--fontprimaria);
-    font-size: 1.4em;
-    font-weight: 500;
-}
-
-.navbar-galeria > a {
-    font-family: var(--fontsegundaria);
-    font-size: .8em;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-*/
-
 
 .galeria-item__thumb {
     width: 100%;
