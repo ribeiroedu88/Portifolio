@@ -72,25 +72,29 @@ _elements.scrollLinks.forEach(link => {
 	});
 });
 
-//*********************************************
-//* Função para mostrar ou escoder portifolio *
-//*********************************************
+
+// var btn = document.getElementById('btn-impresso');
+// var container = document.querySelector('.section-galeria');
+// btn.addEventListener('click', function() {
+    
+//   if(container.style.display === 'flex') {
+//       container.style.display = 'none';
+//   } else {
+//       container.style.display = 'flex';
+//   }
+// });
 
 
-var btn = document.querySelector('#impresso');
-var galeria = document.querySelector('.section-galeria');
-
-btn = addEventListener('click', function(){
-	if (galeria.style.display === 'block'){
-		galeria.style.display = 'none';
-	}
-		else {
-			galeria.style.display = 'flex';
-		}
-});
-
-
-
+// var btnrede = document.getElementById('btn-redes');
+// var container = document.querySelector('.section-redes');
+// btnrede.addEventListener('click', function() {
+    
+//   if(container.style.display === 'flex') {
+//       container.style.display = 'none';
+//   } else {
+//       container.style.display = 'flex';
+//   }
+// });
 
 
 
