@@ -612,8 +612,8 @@ body {
     background: rgba(0, 0, 0, 0.72);
     left: 0;
     top: 20vh;
-    min-width: 350px;
-    height: 300px;
+    min-width: 400px;
+    height: 350px;
     color: white;
     display: flex;
     justify-content: center;
@@ -621,8 +621,8 @@ body {
     z-index: 4;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 400px) {
     .modal {
-        margin: 0px calc((100% - 350px)/2);
+        margin: 0px calc((100% - 400px)/2);
     }
 }
