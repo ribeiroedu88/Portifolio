@@ -606,18 +606,14 @@ body {
 /**********************************/
 /* 11. Modal
 /**********************************/
-
-/* .modal {
-    visibility: hidden;
-} */
-
+  
 .modal {
     position: fixed;
     background: rgba(0, 0, 0, 0.72);
     left: 0;
     top: 20vh;
-    width: 500px;
-    height: 400px;
+    min-width: 350px;
+    height: 300px;
     color: white;
     display: flex;
     justify-content: center;
@@ -625,79 +621,8 @@ body {
     z-index: 4;
 }
 
-.modal__close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    font-family: var(--fontsegundaria);
-    font-size: 1.2em;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.slider {
-    position: relative;
-}
-
-.slider-image {
-    width: 450px;
-}
-
-.slider-image__img {
-    width: 100%;
-    object-fit: cover;
-}
-
-.slider-image__number {
-    position: absolute;
-    background: var(--corbk);
-    font-family: var(--fontsegundaria);
-    font-size: .7em;
-    padding: 4px;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-.slider-buttons {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.slider-buttons__btn-prev, .slider-buttons__btn-next {
-    font-family: var(--fontsegundaria);
-    font-size: 1.8em;
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transition: var(--transition);
-}
-
-.slider-buttons__btn-prev:hover, .slider-buttons__btn-next:hover {
-    color: var(--cormg);
-}
-
-.slider-image-description {
-    font-family: var(--fontsegundaria);
-    font-size: .8em;
-    background: var(--corbk);
-    text-align: center;
-    padding: 3px;
-}
-
 @media screen and (min-width: 375px) {
     .modal {
-        margin: 0px calc((100% - 500px)/2);
+        margin: 0px calc((100% - 350px)/2);
     }
 }
-
-@media (max-width: 360px){
-    .modal > div  {
-      width: 300px;            
-    }
- }
