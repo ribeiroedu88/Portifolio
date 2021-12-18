@@ -634,6 +634,14 @@ body {
     object-fit: cover;
 }
 
+.slider-descricao {
+    font-family: var(--fontsegundaria);
+    font-size: .7em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
 @media screen and (min-width: 450px) {
     .modal {
         margin: 0px calc((100% - 450px)/2);
