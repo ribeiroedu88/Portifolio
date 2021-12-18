@@ -612,8 +612,8 @@ body {
     background: rgba(0, 0, 0, 0.72);
     left: 0;
     top: 20vh;
-    min-width: 400px;
-    height: 350px;
+    min-width: 410px;
+    height: 330px;
     color: white;
     display: flex;
     justify-content: center;
@@ -621,8 +621,21 @@ body {
     z-index: 4;
 }
 
-@media screen and (min-width: 400px) {
+.modal__content {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.modal__content > img {
+    padding: 0;
+    margin: 0;
+    width: 400px;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 450px) {
     .modal {
-        margin: 0px calc((100% - 400px)/2);
+        margin: 0px calc((100% - 450px)/2);
     }
 }
