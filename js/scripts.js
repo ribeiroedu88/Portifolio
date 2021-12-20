@@ -36,24 +36,24 @@ const _gallery = [
 const _elements = {
 	date: document.querySelector(".date"),
 
-	scrollLinks: document.querySelectorAll(".navbar-list__link"),
+	scrollLinks: document.querySelectorAll(".navbar-list__link, .footer-list__link"),
 	navbarList: document.querySelector(".navbar-list"),
 	toggle: document.querySelector(".navbar-header__toggle"),
 
-	galleryItems: document.querySelectorAll(".galeria-item"),
-	sliderThumbsImage: document.querySelectorAll(".slider-thumbs__img"),
-	closeModalBtn: document.querySelector(".modal__close"),
-	modal: document.querySelector(".modal"),
+	// galleryItems: document.querySelectorAll(".galeria-item"),
+	// sliderThumbsImage: document.querySelectorAll(".slider-thumbs__img"),
+	// closeModalBtn: document.querySelector(".modal__close"),
+	// modal: document.querySelector(".modal"),
 
-	slider: document.querySelector(".slider"),
-	sliderImage: document.querySelector(".slider-image__img"),
-	sliderImageNumber: document.querySelector(".slider-image__number"),
-	sliderImageDescription: document.querySelector(".slider-image-description"),
-	sliderPrevButton: document.querySelector(".slider-buttons__btn-prev"),
-	sliderNextButton: document.querySelector(".slider-buttons__btn-next"),
+	// slider: document.querySelector(".slider"),
+	// sliderImage: document.querySelector(".slider-image__img"),
+	// sliderImageNumber: document.querySelector(".slider-image__number"),
+	// sliderImageDescription: document.querySelector(".slider-image-description"),
+	// sliderPrevButton: document.querySelector(".slider-buttons__btn-prev"),
+	// sliderNextButton: document.querySelector(".slider-buttons__btn-next"),
 }
 
-let _sliderCounter = 0, _touchStart, _touchEnd;
+// let _sliderCounter = 0, _touchStart, _touchEnd;
 
 _elements.scrollLinks.forEach(link => {
 	link.addEventListener("click", e => {
@@ -87,56 +87,32 @@ const closeModal = () => {
 }
 
 
-var slideIndex = 1;
-showSlides(slideIndex);
+var slideNumber = 1;
+showSlider(slideNumber);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlider(slideNumber += n);
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlider(slideNumber = n);
 }
 
-function showSlides(n) {
+function showSlider(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {slideNumber = 1}    
+  if (n < 1) {slideNumber = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
+  slides[slideNumber-1].style.display = "block";  
 }
 
-
-// var btn = document.getElementById('btn-impresso');
-// var container = document.querySelector('.section-galeria');
-// btn.addEventListener('click', function() {
-    
-//   if(container.style.display === 'flex') {
-//       container.style.display = 'none';
-//   } else {
-//       container.style.display = 'flex';
-//   }
-// });
-
-
-// var btnrede = document.getElementById('btn-redes');
-// var container = document.querySelector('.section-redes');
-// btnrede.addEventListener('click', function() {
-    
-//   if(container.style.display === 'flex') {
-//       container.style.display = 'none';
-//   } else {
-//       container.style.display = 'flex';
-//   }
-// });
 
 
 
