@@ -283,6 +283,16 @@ body {
 /* 5. Trabalhos
 /**********************************/
 
+.button-impresso {
+    font-family: var(--fontprimaria);
+    font-size: 1.2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .section-trabalho {
     background-color: var(--cormg);
     width: 100%;
@@ -308,12 +318,12 @@ body {
     margin-top: 16px;
 }
 
-.trabalho_titulo {
+/* .trabalho_titulo {
     font-family: var(--fontprimaria);
     font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
-}
+} */
 
 .trabalho_descricao {
     max-width: 300px;
@@ -422,77 +432,85 @@ body {
 /**********************************/
 /* 11. Modal
 /**********************************/
-
-/* .modal {
-    visibility: hidden;
-} */
-  
-.modal {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.72);
-    left: 0;
-    top: 25vh;
-    min-width: 410px;
-    height: 330px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-}
-
-.modal__content > img {
-    padding: 0;
-    margin: 0;
-    width: 390px;
-    object-fit: cover;
-}
-
-.slider-descricao {
-    font-family: var(--fontsegundaria);
-    font-size: .7em;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-}
-
-.modal__close {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+.button-close {
+    font-size: .8em;
+    padding-left: 5px;
     padding-right: 5px;
-    font-family: var(--fontsegundaria);
-    font-size: 1.7em;
-    font-weight: 200;
-    z-index: 6;
+    margin-right: 5px;
 }
 
-.modal__window {
-    position: relative;
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    width: 100vw;
+    max-width: 420px;
+    height: auto;
+    min-height: 400px;
+    position: fixed;
+    top: 28%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
-.slider-buttons {
-    position: absolute;
+.modal {
+    background-color: rgba(15, 15, 16, 0.72);
+    border-radius: 8px;
+    width: 100vw;
+    max-width: 400px;
+    height: auto;
+    min-height: 300px;
+}
+
+.modal-header {
+    font-size: 2em;
+    text-align: right;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal-content > img {
+    width: 95%;
+    object-fit: cover;
+    padding: 0 2.5%;
+}
+
+.modal-footer {
     display: flex;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
     justify-content: space-between;
 }
 
 .slider-buttons__btn-prev, .slider-buttons__btn-next {
-    font-family: var(--fontsegundaria);
-    font-size: 1.5em;
-    font-weight: 900;
-    padding: 0px 8px;
-    display: flex;
-    align-items: center;
+    font-size: 2em;
+    padding: 5px;
     cursor: pointer;
 }
 
-.slider-buttons__btn-prev:hover, .slider-buttons__btn-next:hover {
-    color: var(--cordg);
+@media screen and (min-width: 450px) {
+    .modal-overlay {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}
+
+     
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
 @media screen and (min-width: 450px) {

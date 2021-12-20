@@ -73,6 +73,19 @@ _elements.scrollLinks.forEach(link => {
 });
 
 
+
+const openModal = () => {
+    let ovelay = document.getElementById("overlay");
+    let modal = document.getElementById("modal");
+    ovelay.style.display = 'flex'
+}
+
+const closeModal = () => {
+    let ovelay = document.getElementById("overlay");
+    let modal = document.getElementById("modal");
+    ovelay.style.display = 'none'
+}
+
 // var btn = document.getElementById('btn-impresso');
 // var container = document.querySelector('.section-galeria');
 // btn.addEventListener('click', function() {

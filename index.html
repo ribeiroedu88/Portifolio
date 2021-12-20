@@ -82,7 +82,9 @@
 
 				<article class="trabalho-artigo">
 					<h3 class="trabalho_titulo trabalho_titulo--newpapper">
-					<button id="btn-modal__impressos">impressos</button>
+				
+						<button onclick="openModal()" class="button-impresso">Impressos</button>
+
 					</h3>
 					<p class="trabalho_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis impedit praesentium voluptas ducimus deleniti ipsum laborum.</p>
 				</article><!--impressos-->
@@ -136,25 +138,24 @@
 
     </footer>
 
-	<div class="modal" id="modal">
-		<div class="modal__window">
-		  <div class="modal__content">
-			<img src="imagens/impressos/port-011.png" />
-			<p class="slider-descricao">Arraste para o lado</p>
-			<div class="modal__close">
-				<i class="fas fa-times"></i>
-			</div><!-- modal__close -->
-			<div class="slider-buttons">
-				<div class="slider-buttons__btn-prev">
-					<i class="fas fa-chevron-left"></i>
-				</div><!-- slider-buutons__bnt-prev-->
-				<div class="slider-buttons__btn-next">
-					<i class="fas fa-chevron-right"></i>
-				</div><!-- slider-buutons__bnt-next-->
-			</div><!-- slider-buttons -->
-		  </div><!-- modal__content -->
-		</div><!-- modal__window -->
-	  </div><!-- modal -->
+	<div class="modal-overlay" id="overlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <button onclick="closeModal()" class="button-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="imagens/impressos/port-004.png" alt="">
+            </div>
+            <div class="modal-footer">
+                <div class="slider-buttons__btn-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-buttons__btn-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 	  
 	<script src="js/scripts.js"></script>
 </body>
