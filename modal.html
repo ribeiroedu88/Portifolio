@@ -1,0 +1,38 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal outside click listener</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+	referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="modal.css">
+</head>
+
+<body>
+
+
+    <div class="modal-overlay" id="overlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <button onclick="closeModal()"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-content">
+                <img src="imagens/impressos/port-004.png" alt="">
+            </div>
+            <div class="modal-footer">
+                <div class="slider-buttons__btn-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider-buttons__btn-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="openModal()">Open modal</button>
+
+
+    <script src="modal.js"></script>
+</body>
+
+</html>
