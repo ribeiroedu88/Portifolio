@@ -1,37 +1,3 @@
-const _gallery = [
-	{
-		img: "assets/photo_0.png",
-		description: "Conceição do Mato Dentro"
-	},
-	{
-		img: "assets/photo_1.png",
-		description: "Diamantina"
-	},
-	{
-		img: "assets/photo_2.png",
-		description: "Tiradentes"
-	},
-	{
-		img: "assets/photo_3.png",
-		description: "São Lourenço"
-	},
-	{
-		img: "assets/photo_4.png",
-		description: "Serro"
-	},
-	{
-		img: "assets/photo_5.png",
-		description: "São Tomé das Letras"
-	},
-	{
-		img: "assets/photo_6.png",
-		description: "Ipoema"
-	},
-	{
-		img: "assets/photo_7.png",
-		description: "Ouro Preto"
-	}
-]
 
 const _elements = {
 	date: document.querySelector(".date"),
@@ -72,7 +38,7 @@ _elements.scrollLinks.forEach(link => {
 	});
 });
 
-
+//MODAL
 
 const openModal = () => {
     let ovelay = document.getElementById("overlay");
@@ -113,44 +79,12 @@ function showSlider(n) {
   slides[slideNumber-1].style.display = "block";  
 }
 
-
-
+//MENU
 
 _elements.toggle.addEventListener("click", () => {
 	_elements.navbarList.classList.toggle("navbar-list--show-links");
 });
 
-_elements.galleryItems.forEach(item => {
-
-});
-
-_elements.sliderThumbsImage.forEach(img => {
-
-});
-
-_elements.closeModalBtn.addEventListener("click", () => {
-
-});
-
-_elements.sliderNextButton.addEventListener("click", () => nextImage());
-
-_elements.sliderPrevButton.addEventListener("click", () => prevImage());
-
-const getImageId = (target) => {
-
-}
-
-const updateModal = (imgId) => {
-
-}
-
-const nextImage = () => {
-
-}
-
-const prevImage = () => {
-
-}
 
 /**************************************************************************/
 /* As linhas de código abaixo correspondem a um capítulo e um vídeo bônus 

@@ -446,12 +446,12 @@ body {
     width: 100vw;
     max-width: 420px;
     height: auto;
-    min-height: 400px;
+    min-height: 360px;
     position: fixed;
     top: 28%;
     left: 0;
     z-index: 1;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     color: white;
@@ -473,11 +473,11 @@ body {
     cursor: pointer;
 }
 
-.modal-content > img {
+/* .modal-content > img {
     width: 95%;
     object-fit: cover;
     padding: 0 2.5%;
-}
+} */
 
 .modal-footer {
     display: flex;
@@ -526,7 +526,13 @@ body {
 /**********************************/
 
 .mySlides {
-    display: none;
+    display: flex;
+}
+
+.mySlides img {
+    width: 95%;
+    object-fit: cover;
+    padding: 0 2.5%;
 }
 
 /* Next & previous buttons */
@@ -535,11 +541,11 @@ body {
     position: absolute;
     top: 50%;
     width: auto;
-    padding: 16px;
+    padding: 0px 20px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 2em;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -547,7 +553,7 @@ body {
   
   /* Position the "next button" to the right */
   .next {
-    right: 0;
+    right: 10px;
     border-radius: 3px 0 0 3px;
   }
   
