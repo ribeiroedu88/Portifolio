@@ -451,7 +451,7 @@ body {
     top: 28%;
     left: 0;
     z-index: 1;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: white;
@@ -526,7 +526,7 @@ body {
 /**********************************/
 
 .mySlides {
-    display: flex;
+    display: none;
 }
 
 .mySlides img {
