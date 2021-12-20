@@ -525,9 +525,9 @@ body {
 /* 11. Modal slider
 /**********************************/
 
-/* .mySlides {
+.mySlides {
     display: none;
-} */
+}
 
 /* Next & previous buttons */
 .prev, .next {
