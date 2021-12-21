@@ -611,3 +611,84 @@ body {
         margin: 0px calc((100% - 450px)/2);
     }
 }
+
+
+/**********************************/
+/* . Modal MOTION
+/**********************************/
+
+div.modal-content {
+    position: relative;
+}
+
+.mySlidesMotion {
+    display: none;
+}
+
+div.mySlidesMotion > iframe {
+    position: absolute;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    width: 95%;
+    min-height: 250px;
+    height: auto;
+}
+
+.modal-overlay__motion {
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    width: 100vw;
+    max-width: 420px;
+    height: auto;
+    min-height: 320px;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal-motion {
+    background-color: rgba(15, 15, 16, 0.72);
+    border-radius: 8px;
+    width: 100vw;
+    max-width: 400px;
+    height: auto;
+    min-height: 300px;
+}
+
+.modal-footer__motion {
+    position: relative;
+    top: 120px;
+}
+
+@media screen and (min-width: 450px) {
+    .modal-overlay__motion {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}
+     
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal-motion {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@media screen and (min-width: 450px) {
+    .modal-motion {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}

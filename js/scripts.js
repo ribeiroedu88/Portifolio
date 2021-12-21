@@ -113,6 +113,47 @@ function showSliderRede(n) {
 }
 
 
+// ************************  MODAL REDE  ******************************
+
+const openMotion = () => {
+  let ovelay = document.getElementById("overlay-motion");
+  let modal = document.getElementById("modal-motion");
+  ovelay.style.display = 'flex'
+}
+
+const closeModalmotion = () => {
+  let ovelay = document.getElementById("overlay-motion");
+  let modal = document.getElementById("modal-motion");
+  ovelay.style.display = 'none'
+}
+
+var slideMotion = 1;
+showSliderMotion(slideMotion);
+
+function plusSlidesmotion(n) {
+showSliderMotion(slideMotion += n);
+}
+
+function currentSlideMotion(n) {
+showSliderMotion(slideMotion = n);
+}
+
+function showSliderMotion(n) {
+var i;
+var slidesMotion = document.getElementsByClassName("mySlidesMotion");
+var dotsmotion = document.getElementsByClassName("dotmotion");
+if (n > slidesMotion.length) {slideMotion = 1}    
+if (n < 1) {slideMotion = slidesMotion.length}
+for (i = 0; i < slidesMotion.length; i++) {
+    slidesMotion[i].style.display = "none";  
+}
+for (i = 0; i < dotsmotion.length; i++) {
+    dotsmotion[i].className = dots[i].className.replace(" active", "");
+}
+slidesMotion[slideMotion-1].style.display = "block";  
+}
+
+
 
 
 /**************************************************************************/

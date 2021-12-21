@@ -95,7 +95,9 @@
 				</article><!--redes_sociais-->
 
 				<article class="trabalho-artigo">
-					<h3 class="trabalho_titulo trabalho_titulo--motion">Motion designer</h3>
+					<h3 class="trabalho_titulo trabalho_titulo--motion">
+						<button onclick="openMotion()" class="buttons">Motion designer</button>
+					</h3>
 					<p class="trabalho_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis impedit praesentium voluptas ducimus deleniti ipsum laborum.</p>
 				</article><!--motion-->
 
@@ -256,6 +258,30 @@
             <div class="modal-footer">
                 <a class="prev" onclick="plusSlidesRede(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlidesRede(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+	<!-- ********************* Modal Motion ************************************ -->
+
+	<div class="modal-overlay__motion" id="overlay-motion">
+        <div class="modal-motion" id="modal-motion">
+            <div class="modal-header">
+                <button onclick="closeModalmotion()" class="button-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-content">
+				<div class="mySlidesMotion fade">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/-cMiry3cogI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="mySlidesMotion fade">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/u6hhLHVTTbg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div class="mySlidesMotion fade">
+                	<iframe width="560" height="315" src="https://www.youtube.com/embed/lYIAjRO_Yhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+            <div class="modal-footer__motion">
+                <a class="prev" onclick="plusSlidesmotion(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidesmotion(1)">&#10095;</a>
             </div>
         </div>
     </div>
