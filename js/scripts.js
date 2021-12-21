@@ -5,21 +5,7 @@ const _elements = {
 	scrollLinks: document.querySelectorAll(".navbar-list__link, .footer-list__link"),
 	navbarList: document.querySelector(".navbar-list"),
 	toggle: document.querySelector(".navbar-header__toggle"),
-
-	// galleryItems: document.querySelectorAll(".galeria-item"),
-	// sliderThumbsImage: document.querySelectorAll(".slider-thumbs__img"),
-	// closeModalBtn: document.querySelector(".modal__close"),
-	// modal: document.querySelector(".modal"),
-
-	// slider: document.querySelector(".slider"),
-	// sliderImage: document.querySelector(".slider-image__img"),
-	// sliderImageNumber: document.querySelector(".slider-image__number"),
-	// sliderImageDescription: document.querySelector(".slider-image-description"),
-	// sliderPrevButton: document.querySelector(".slider-buttons__btn-prev"),
-	// sliderNextButton: document.querySelector(".slider-buttons__btn-next"),
 }
-
-// let _sliderCounter = 0, _touchStart, _touchEnd;
 
 _elements.scrollLinks.forEach(link => {
 	link.addEventListener("click", e => {
@@ -38,7 +24,14 @@ _elements.scrollLinks.forEach(link => {
 	});
 });
 
-//MODAL
+//*************************  MENU  ****************************************
+
+_elements.toggle.addEventListener("click", () => {
+	_elements.navbarList.classList.toggle("navbar-list--show-links");
+});
+
+
+// ************************  MODAL IMPRESSO  ******************************
 
 const openModal = () => {
     let ovelay = document.getElementById("overlay");
@@ -51,7 +44,6 @@ const closeModal = () => {
     let modal = document.getElementById("modal");
     ovelay.style.display = 'none'
 }
-
 
 var slideNumber = 1;
 showSlider(slideNumber);
@@ -79,11 +71,48 @@ function showSlider(n) {
   slides[slideNumber-1].style.display = "block";  
 }
 
-//MENU
 
-_elements.toggle.addEventListener("click", () => {
-	_elements.navbarList.classList.toggle("navbar-list--show-links");
-});
+// ************************  MODAL REDE  ******************************
+
+const openRede = () => {
+    let ovelay = document.getElementById("overlay-rede");
+    let modal = document.getElementById("modal-rede");
+    ovelay.style.display = 'flex'
+}
+
+const closeModalrede = () => {
+    let ovelay = document.getElementById("overlay-rede");
+    let modal = document.getElementById("modal-rede");
+    ovelay.style.display = 'none'
+}
+
+var slideRede = 1;
+showSliderRede(slideRede);
+
+function plusSlidesRede(n) {
+  showSliderRede(slideRede += n);
+}
+
+function currentSlideRede(n) {
+  showSliderRede(slideRede = n);
+}
+
+function showSliderRede(n) {
+  var i;
+  var slidesRede = document.getElementsByClassName("mySlidesRede");
+  var dotsrede = document.getElementsByClassName("dotrede");
+  if (n > slidesRede.length) {slideRede = 1}    
+  if (n < 1) {slideRede = slidesRede.length}
+  for (i = 0; i < slidesRede.length; i++) {
+      slidesRede[i].style.display = "none";  
+  }
+  for (i = 0; i < dotsrede.length; i++) {
+      dotsrede[i].className = dots[i].className.replace(" active", "");
+  }
+  slidesRede[slideRede-1].style.display = "block";  
+}
+
+
 
 
 /**************************************************************************/

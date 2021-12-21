@@ -82,15 +82,15 @@
 
 				<article class="trabalho-artigo">
 					<h3 class="trabalho_titulo trabalho_titulo--newpapper">
-				
-						<button onclick="openModal()" class="button-impresso">Impressos</button>
-
+						<button onclick="openModal()" class="buttons">Impressos</button>
 					</h3>
 					<p class="trabalho_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis impedit praesentium voluptas ducimus deleniti ipsum laborum.</p>
 				</article><!--impressos-->
 
 				<article class="trabalho-artigo">
-					<h3 class="trabalho_titulo trabalho_titulo--redes">Redes sociais</h3>
+					<h3 class="trabalho_titulo trabalho_titulo--redes">
+						<button onclick="openRede()" class="buttons">Redes sociais</button>
+					</h3>
 					<p class="trabalho_descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis impedit praesentium voluptas ducimus deleniti ipsum laborum.</p>
 				</article><!--redes_sociais-->
 
@@ -137,6 +137,8 @@
 		<p class="copyright">copyright &copy; Eduardo Ribeiro. <span class="date"></span>Todos os direitos reservados.</p>
 
     </footer>
+
+	<!-- ****************** Modal Impresso ************************************ -->
 
 	<div class="modal-overlay" id="overlay">
         <div class="modal" id="modal">
@@ -208,6 +210,52 @@
             <div class="modal-footer">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </div>
+
+	<!-- ********************* Modal Rede ************************************ -->
+
+	<div class="modal-overlay__rede" id="overlay-rede">
+        <div class="modal-rede" id="modal-rede">
+            <div class="modal-header">
+                <button onclick="closeModalrede()" class="button-close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-content">
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/academia-001-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/academia-002-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/hamburger.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/acai-1.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/pastel-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/moda-01-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/moda-02-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/moda-03-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/otica-vision-01.jpg" alt="">
+				</div>
+				<div class="mySlidesRede fade">
+                	<img src="imagens/redes/otica-vision.jpg" alt="">
+				</div>
+            </div>
+            <div class="modal-footer">
+                <a class="prev" onclick="plusSlidesRede(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidesRede(1)">&#10095;</a>
             </div>
         </div>
     </div>

@@ -167,7 +167,6 @@ body {
     }
 
 }
-   
 
 /**********************************/
 /* 3. Intro
@@ -278,12 +277,7 @@ body {
     }
 }
 
-
-/**********************************/
-/* 5. Trabalhos
-/**********************************/
-
-.button-impresso {
+.buttons {
     font-family: var(--fontprimaria);
     font-size: 1.2em;
     font-weight: 600;
@@ -292,6 +286,11 @@ body {
     border: none;
     cursor: pointer;
 }
+
+
+/**********************************/
+/* 5. Trabalhos
+/**********************************/
 
 .section-trabalho {
     background-color: var(--cormg);
@@ -317,13 +316,6 @@ body {
 .trabalho-artigo + .trabalho-artigo {
     margin-top: 16px;
 }
-
-/* .trabalho_titulo {
-    font-family: var(--fontprimaria);
-    font-size: 1.5em;
-    font-weight: 600;
-    text-transform: uppercase;
-} */
 
 .trabalho_descricao {
     max-width: 300px;
@@ -393,7 +385,7 @@ body {
 }
 
 /**********************************/
-/* 10. Rodape
+/* 6. Rodape
 /**********************************/
 
 .navbar-rodape {
@@ -430,7 +422,7 @@ body {
 }
 
 /**********************************/
-/* 11. Modal
+/* 7. Modal
 /**********************************/
 .button-close {
     font-size: .8em;
@@ -438,7 +430,6 @@ body {
     padding-right: 5px;
     margin-right: 5px;
 }
-
 
 .modal-overlay {
     background-color: rgba(0, 0, 0, 0.33);
@@ -473,12 +464,6 @@ body {
     cursor: pointer;
 }
 
-/* .modal-content > img {
-    width: 95%;
-    object-fit: cover;
-    padding: 0 2.5%;
-} */
-
 .modal-footer {
     display: flex;
     justify-content: space-between;
@@ -495,7 +480,6 @@ body {
         margin: 0px calc((100% - 450px)/2);
     }
 }
-
      
 @keyframes scale-in {
     0%{
@@ -519,10 +503,8 @@ body {
     }
 }
 
-
-
 /**********************************/
-/* 11. Modal slider
+/* . Modal slider Impressão
 /**********************************/
 
 .mySlides {
@@ -560,3 +542,72 @@ body {
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+  }
+
+/**********************************/
+/* . Modal REDE
+/**********************************/
+
+.mySlidesRede {
+    display: none;
+}
+
+.mySlidesRede img {
+    width: 95%;
+    object-fit: cover;
+    padding: 0 2.5%;
+}
+
+.modal-overlay__rede {
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 10px;
+    width: 100vw;
+    max-width: 420px;
+    height: auto;
+    min-height: 450px;
+    position: fixed;
+    top: 20%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.modal-rede {
+    background-color: rgba(15, 15, 16, 0.72);
+    border-radius: 8px;
+    width: 100vw;
+    max-width: 400px;
+    height: auto;
+    min-height: 300px;
+}
+
+@media screen and (min-width: 450px) {
+    .modal-overlay__rede {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}
+     
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal-rede {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@media screen and (min-width: 450px) {
+    .modal-rede {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}
