@@ -265,11 +265,11 @@
 	<!-- ********************* Modal Motion ************************************ -->
 
 	<div class="modal-overlay__motion" id="overlay-motion">
+		<div class="modal-header__motion">
+			<button onclick="closeModalmotion()" class="button-close__motion"><i class="fas fa-times"></i></button>
+		</div>
         <div class="modal-motion" id="modal-motion">
-            <div class="modal-header">
-                <button onclick="closeModalmotion()" class="button-close"><i class="fas fa-times"></i></button>
-            </div>
-            <div class="modal-content">
+            <div class="modal-content__motion">
 				<div class="mySlidesMotion fade">
                 	<iframe width="560" height="315" src="https://www.youtube.com/embed/-cMiry3cogI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
@@ -279,13 +279,13 @@
 				<div class="mySlidesMotion fade">
                 	<iframe width="560" height="315" src="https://www.youtube.com/embed/lYIAjRO_Yhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
-            <div class="modal-footer__motion">
+        	</div>
+			<div class="modal-footer__motion">
                 <a class="prev" onclick="plusSlidesmotion(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlidesmotion(1)">&#10095;</a>
             </div>
-        </div>
-    </div>
-	  
+    	</div>
+	</div>  
 	<script src="js/scripts.js"></script>
 </body>
 </html>
