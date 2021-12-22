@@ -705,3 +705,91 @@ div.mySlidesMotion > iframe {
         z-index: 7;
     }
 }
+
+
+/**********************************/
+/* . Modal FOTO
+/**********************************/
+
+.modal-header__foto {
+    position:absolute;
+    font-family: var(--fontsegundaria);
+    font-size: 1.2em;
+    padding: 0px 10px;
+    top: -30px;
+    right: 10px;
+    z-index: 7;
+}
+
+.modal-overlay__foto {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 100vw;
+    max-width: 370px;
+    height: 270px;
+    top: 23%;
+    left: 0;
+    z-index: 7;
+    color: white;
+    display: none;
+}
+
+.modal-foto {
+    background-color: rgba(0, 0, 0, 0.755);
+    width: 345px;
+    height: 255px;
+    margin: 2%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mySlidesFoto img {
+    width: 97%;
+    object-fit: cover;
+    padding: 1.5%;
+}
+
+@media screen and (min-width: 950px) {
+
+    .modal-overlay__foto {
+        min-width: 700px;
+        height: 500px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100%;
+    }
+
+    .modal-foto {
+        min-width: 650px;
+        height: 450px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .modal-overlay__foto {
+        margin: 0px calc((100% - 800px)/2);
+    }
+}
+     
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal-foto {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@media screen and (min-width: 450px) {
+    .modal-foto {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}

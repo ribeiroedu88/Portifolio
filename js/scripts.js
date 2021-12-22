@@ -113,7 +113,7 @@ function showSliderRede(n) {
 }
 
 
-// ************************  MODAL REDE  ******************************
+// ************************  MODAL MOTION  ******************************
 
 const openMotion = () => {
   let ovelay = document.getElementById("overlay-motion");
@@ -150,9 +150,49 @@ for (i = 0; i < slidesMotion.length; i++) {
 for (i = 0; i < dotsmotion.length; i++) {
     dotsmotion[i].className = dots[i].className.replace(" active", "");
 }
-slidesMotion[slideMotion-1].style.display = "block";  
+    slidesMotion[slideMotion-1].style.display = "block";  
 }
 
+
+// ************************  MODAL FOTO   ******************************
+
+const openFoto = () => {
+  let ovelay = document.getElementById("overlay__foto");
+  let modal = document.getElementById("modal__foto");
+  ovelay.style.display = 'flex'
+}
+
+const closeModalfoto = () => {
+  let ovelay = document.getElementById("overlay__foto");
+  let modal = document.getElementById("modal__foto");
+  ovelay.style.display = 'none'
+}
+
+var slideFoto = 1;
+showSliderFoto(slideFoto);
+
+function plusSlidesFoto(n) {
+showSliderFoto(slideFoto += n);
+}
+
+function currentSlideFoto(n) {
+showSliderFoto(slideFoto = n);
+}
+
+function showSliderFoto(n) {
+var i;
+var slidesFoto = document.getElementsByClassName("mySlidesFoto");
+var dotsfoto = document.getElementsByClassName("dotfoto");
+if (n > slidesFoto.length) {slideFoto = 1}    
+if (n < 1) {slideFoto = slidesFoto.length}
+for (i = 0; i < slidesFoto.length; i++) {
+    slidesFoto[i].style.display = "none";  
+}
+for (i = 0; i < dotsfoto.length; i++) {
+    dotsfoto[i].className = dots[i].className.replace(" active", "");
+}
+    slidesFoto[slideFoto-1].style.display = "block";  
+}
 
 
 
