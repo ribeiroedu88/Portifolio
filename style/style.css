@@ -679,21 +679,29 @@ div.mySlidesMotion > iframe {
             animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 
-/* @media screen and (min-width: 375px) {
+@media screen and (min-width: 920px) {
+
     .modal-motion {
-        margin: 40%;
-        min-width: 100%;
-        max-height: 100px;
+        position: relative;
+        margin-top: 20%;
+        min-width: 375px;
+        min-height: auto;
         padding: 0px;
+    }
+
+    div.mySlidesMotion > iframe {
+        position: absolute;
+        min-width: 375px;
+        min-height: auto;
     }
 
     .button-close__motion {
         position: absolute;
         font-family: var(--fontsegundaria);
-        font-size: 1em;
+        font-size: 1.2em;
         padding: 0px 10px;
-        top: 15%;
-        left: 85%;
+        top: 20%;
+        left: 70%;
         z-index: 7;
     }
-} */
+}
