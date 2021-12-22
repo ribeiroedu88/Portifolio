@@ -725,7 +725,7 @@ div.mySlidesMotion > iframe {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.33);
     width: 100%;
-    min-width: 370px;
+    /* min-width: 370px; */
     height: 270px;
     top: 23%;
     left: 0;
