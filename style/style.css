@@ -439,7 +439,7 @@ body {
     top: 0;
     left: 0;
     z-index: 6;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     color: white;
@@ -470,39 +470,6 @@ body {
     padding-top: 10px;
 }
 
-/* .slider-buttons__btn-prev, .slider-buttons__btn-next {
-    font-size: 2em;
-    padding: 5px;
-    cursor: pointer;
-} */
-
-/* @media screen and (min-width: 450px) {
-    .modal-overlay {
-        margin: 0px calc((100% - 450px)/2);
-    }
-}
-     
-@keyframes scale-in {
-    0%{
-        -webkit-transform: scale(0);
-                transform: scale(0);
-    }
-    100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-    }
-}
-
-.modal {
-    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-}
-
-@media screen and (min-width: 450px) {
-    .modal {
-        margin: 0px calc((100% - 450px)/2);
-    }
-} */
 
 /**********************************/
 /* . Modal slider Impressão
@@ -545,6 +512,28 @@ body {
     background-color: rgba(0,0,0,0.8);
   }
 
+  @keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@media screen and (min-width: 450px) {
+    .modal {
+        margin: 0px calc((100% - 450px)/2);
+    }
+}
+
 /**********************************/
 /* . Modal REDE
 /**********************************/
@@ -554,22 +543,19 @@ body {
 }
 
 .mySlidesRede img {
-    width: 95%;
+    width: 98%;
     object-fit: cover;
-    padding: 0 2.5%;
+    padding: 0px 5px 20px 5px;
 }
 
 .modal-overlay__rede {
-    background-color: rgba(0, 0, 0, 0.33);
-    border-radius: 10px;
-    width: 100vw;
-    max-width: 420px;
-    height: auto;
-    min-height: 450px;
     position: fixed;
-    top: 20%;
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 6;
     display: none;
     align-items: center;
     justify-content: center;
@@ -577,18 +563,19 @@ body {
 }
 
 .modal-rede {
+    position: absolute;
     background-color: rgba(15, 15, 16, 0.72);
-    border-radius: 8px;
-    width: 100vw;
-    max-width: 400px;
+    width: 375px;
     height: auto;
-    min-height: 300px;
+    padding: 10px;
 }
 
-@media screen and (min-width: 450px) {
-    .modal-overlay__rede {
-        margin: 0px calc((100% - 450px)/2);
-    }
+.modal-footer__rede {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-top: 10px;
 }
      
 @keyframes scale-in {
