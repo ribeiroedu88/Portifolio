@@ -587,50 +587,42 @@ body {
 /* . Modal MOTION
 /**********************************/
 
-.modal-overlay__motion {
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.33);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    z-index: 6;
-    justify-content: center;
+.mySlidesMotion {
     display: none;
 }
 
-.button-close__motion {
-    position: absolute;
-    font-family: var(--fontsegundaria);
-    font-size: 1.2em;
-    padding: 0px 10px;
-    top: 13%;
-    left: 88%;
-    z-index: 7;
+.mySlidesMotion img {
+    width: 98%;
+    object-fit: cover;
+    padding: 0px 5px 20px 5px;
+}
+
+.modal-overlay__motion {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
 .modal-motion {
-    background-color: rgb(0, 0, 0);
-    margin-top: 35%;
-    min-width: 100%;
-    height: 370px;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+    position: absolute;
+    background-color: rgba(15, 15, 16, 0.72);
+    width: 375px;
+    height: auto;
+    padding: 10px;
 }
 
 div.mySlidesMotion > iframe {
-    position: absolute;
-    padding-bottom: 60%;
-    width: 100%;
-    height: 100%;
-}
-
-.modal-footer__motion {
     position: relative;
-    top: 110%;
+    max-width: 375px;
+    padding-bottom: 5%;
 }
      
 @keyframes scale-in {
@@ -647,33 +639,6 @@ div.mySlidesMotion > iframe {
 .modal-motion {
     -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-}
-
-@media screen and (min-width: 920px) {
-
-    .modal-motion {
-        position: relative;
-        margin-top: 20%;
-        min-width: 375px;
-        min-height: auto;
-        padding: 0px;
-    }
-
-    div.mySlidesMotion > iframe {
-        position: absolute;
-        min-width: 375px;
-        min-height: auto;
-    }
-
-    .button-close__motion {
-        position: absolute;
-        font-family: var(--fontsegundaria);
-        font-size: 1.2em;
-        padding: 0px 10px;
-        top: 20%;
-        left: 70%;
-        z-index: 7;
-    }
 }
 
 

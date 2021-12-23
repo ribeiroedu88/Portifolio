@@ -130,7 +130,7 @@ const closeModalmotion = () => {
 var slideMotion = 1;
 showSliderMotion(slideMotion);
 
-function plusSlidesmotion(n) {
+function plusSlidesMotion(n) {
 showSliderMotion(slideMotion += n);
 }
 
