@@ -257,14 +257,14 @@
                 	<img src="imagens/redes/otica-vision.jpg" alt="">
 				</div>
             </div>
-            <div class="modal-footer__rede">
+            <div class="modal-footer">
                 <a class="prev" onclick="plusSlidesRede(-1)">&#10094;</a>
 				<a class="next" onclick="plusSlidesRede(1)">&#10095;</a>
             </div>
         </div>
     </div>
 
-	<!-- ********************* Modal Motion ************************************ -->
+<!-- *************************** Modal Motion ******************************* -->
 
 	<div class="modal-overlay__motion" id="overlay-motion">
 		<div class="modal-header__motion">
@@ -282,34 +282,36 @@
                 	<iframe width="560" height="315" src="https://www.youtube.com/embed/lYIAjRO_Yhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>
         	</div>
-			<div class="modal-footer__motion">
-                <a class="prev" onclick="plusSlidesmotion(-1)">&#10094;</a>
-				<a class="next" onclick="plusSlidesmotion(1)">&#10095;</a>
+			<div class="modal-footer">
+                <a class="prev" onclick="plusSlidesFoto(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidesFoto(1)">&#10095;</a>
             </div>
     	</div>
 	</div>  
+
+
+<!-- **************************** Modal Fotografia *************************** -->
+
+	<div class="modal-overlay__foto" id="overlay__foto">
+		<div class="modal-foto" id="modal-foto">
+			<div class="modal-header">
+				<button onclick="closeModalfoto()" class="button-close"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="modal-content">
+				<div class="mySlidesFoto fade">
+					<img src="imagens/fotografia/imagem-1.jpg" alt="">
+				</div>
+				<div class="mySlidesFoto fade">
+					<img src="imagens/fotografia/imagem-2.jpg" alt="">
+				</div>
+			</div>
+			<div class="modal-footer">
+				<a class="prev" onclick="plusSlidesFoto(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlidesFoto(1)">&#10095;</a>
+			</div>
+		</div>
+	</div>
+
 	<script src="js/scripts.js"></script>
 </body>
 </html>
-
-<!-- **************************** Modal Fotografia ****************************** -->
-
-<div class="modal-overlay__foto" id="overlay__foto">
-	<div class="modal-header__foto">
-		<button onclick="closeModalfoto()" class="button-close"><i class="fas fa-times"></i></button>
-	</div>
-	<div class="modal-foto" id="modal-foto">
-		<div class="modal-content__foto">
-			<div class="mySlidesFoto fade">
-				<img src="imagens/fotografia/imagem-1.jpg" alt="">
-			</div>
-			<div class="mySlidesFoto fade">
-				<img src="imagens/fotografia/imagem-2.jpg" alt="">
-			</div>
-		</div>
-		<div class="modal-footer__foto">
-			<a class="prev" onclick="plusSlidesFoto(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlidesFoto(1)">&#10095;</a>
-		</div>
-	</div>
-</div>
