@@ -172,6 +172,7 @@ body {
 /* 3. Intro
 /**********************************/
 
+
 .div-intro {
     position: relative;
     min-height: 100vh;
@@ -189,25 +190,22 @@ body {
 
 .div-intro__texto {
     position: absolute;
+    width: 100%;
     margin-top: 70vh;
 }
 
-.div-intro__texto > h2 {
-    font-family: var(--fontprimaria);
-    font-size: 1.8em;
-    color: var(--corwh);
-    font-weight: 500;
-    margin-left: 20px;
-}
 
-.div-intro__texto > p {
+.div-intro__texto p {
     font-family: var(--fontsegundaria);
-    font-size: .8em;
+    font-size: 1em;
     color: var(--corwh);
     font-weight: 400;
     margin-left: 20px;
-    width: 300px;
     line-height: var(--entrelinha);
+}
+
+.div-intro__texto p span {
+    font-size: 1.13em;
 }
 
 /**********************************/
@@ -715,7 +713,7 @@ div.mySlidesMotion > iframe {
 /* . Modal CURRICULO
 /**********************************/
 
-ul {
+.modal-content ul {
     font-family: var(--fontsegundaria);
     font-size: .8em;
     font-weight: 500;
