@@ -194,7 +194,19 @@ for (i = 0; i < dotsfoto.length; i++) {
     slidesFoto[slideFoto-1].style.display = "block";  
 }
 
+// ************************  MODAL CURRICULO   ******************************
 
+const openProfi = () => {
+  let ovelay = document.getElementById("overlay__profi");
+  let modal = document.getElementById("modal__profi");
+  ovelay.style.display = 'flex'
+}
+
+const closeModalprofi = () => {
+  let ovelay = document.getElementById("overlay__profi");
+  let modal = document.getElementById("modal__profi");
+  ovelay.style.display = 'none'
+}
 
 /**************************************************************************/
 /* As linhas de código abaixo correspondem a um capítulo e um vídeo bônus 

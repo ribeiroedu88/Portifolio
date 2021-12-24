@@ -71,7 +71,7 @@
 				<img src="imagens/perfil_300.jpg" alt="Sobre nos" class="sobre-c__img">
 				<div class="sobre-texto">
 					<h3 class="sobre-texto__titulo">Um resumo</h3>
-					<p> Designer gráfico com mais de 20 anos de experiência, iniciei minha jornada como arte-final passando a diagramador, assistente de arte e designer gráfico. Trabalhei em editoras, agências de publicidade e gráficas, neste período minha responsabilidade era criar peças gráficas com base em uma identidade visual ou na falta dela desenvolver uma identidade de acordo com a necessidade. <br> Com o crescimento das mídias sociais aprendi novas tecnologias que além do pacote Adobe, After Effects e Premiere, abrange noções de HTML5, CSS3, Javascript, Figma e modelagem em Cinema 4D. E como hobby fotografia amadora.<br> Minha experiência profissional pode ser vista <a href="#">aqui</a>.</p>
+					<p> Designer gráfico com mais de 20 anos de experiência, iniciei minha jornada como arte-final passando a diagramador, assistente de arte e designer gráfico. Trabalhei em editoras, agências de publicidade e gráficas, neste período minha responsabilidade era criar peças gráficas com base em uma identidade visual ou na falta dela desenvolver uma identidade de acordo com a necessidade. <br> Com o crescimento das mídias sociais aprendi novas tecnologias que além do pacote Adobe, After Effects e Premiere, abrange noções de HTML5, CSS3, Javascript, Figma e modelagem em Cinema 4D. E como hobby fotografia amadora.<br> Minha experiência profissional pode ser vista <a href="#perfil" onclick="openProfi()" class="curriculo">aqui</a>.</p>
 			</div> <!-- sobre-c -->
 		</section> <!-- section-sobre -->
 
@@ -369,6 +369,33 @@
 		</div>
 	</div>
 
+
+	<!-- **************************** Modal Curriculo *************************** -->
+	<div class="modal-overlay__profi" id="overlay__profi">
+		<div class="modal-profi" id="modal-profi">
+			<div class="modal-header">
+				<button onclick="closeModalprofi()" class="button-close"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="modal-content">
+				<ul>
+					<li><h4>Designer gráfico</h4></li>
+					<li>Dentsu publicidade de 2009 a 2015</li>
+					<li>For Result propaganda de 2006 a 2009</li>
+					<li>RWA gráfica e publicidade 2003 a 2006</li>
+					<li><h4>Diagramador</h4></li>
+					<li>Editora Exclusiva de 2000 a 2003</li>
+					<li>Graf System de 1998 a 2000</li>
+					<li><h4>Assistente de arte</h4></li>
+					<li>Constata propaganda de 1996 a 1998</li>
+					<li>Jarbas propaganda de 1991 a 1996</li>
+					<li><h4>Arte finalista</h4></li>
+					<li>DPZ Propaganda de 1989 a 1991</li>
+					<li>Grifo Soluções gráficas de 1987 a 1989</li>
+				</ul>
+				<p><a href="Downloads/CV_Eduardo.pdf" download="CV_Eduardo.pdf" type="application/pdf">Download do currículo em pdf.</a></p>
+			</div>
+		</div>	
+	</div>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

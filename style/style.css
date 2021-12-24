@@ -250,6 +250,17 @@ body {
     line-height: var(--entrelinha);
 }
 
+.curriculo {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.curriculo:hover {
+    background-color: var(--cormg);
+    padding: 0 5px;
+}
+
+
 @media screen and (min-width: 768px) {
 
 	.sobre-c {
@@ -269,6 +280,7 @@ body {
 	}
 }
 
+
 @media screen and (min-width: 1024px) {
     .section-sobre {
         width: 70%;
@@ -276,6 +288,11 @@ body {
         margin: auto;
     }
 }
+
+
+/**********************************/
+/* 5. Trabalhos
+/**********************************/
 
 .buttons {
     font-family: var(--fontprimaria);
@@ -287,11 +304,6 @@ body {
     cursor: pointer;
     text-decoration: underline;
 }
-
-
-/**********************************/
-/* 5. Trabalhos
-/**********************************/
 
 .section-trabalho {
     background-color: var(--cormg);
@@ -693,6 +705,90 @@ div.mySlidesMotion > iframe {
 }
 
 .modal-foto {
+    -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+            animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+
+
+/**********************************/
+/* . Modal CURRICULO
+/**********************************/
+
+ul {
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1.7em;
+    margin-left: 15px;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+ul h4 {
+    font-family: var(--fontprimaria);
+    font-size: 1.3em;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    text-indent: -5px;
+    color: rgb(110, 108, 108);
+}
+
+li {
+    text-indent: 10px;
+    color: rgb(184, 179, 179);
+}
+
+.modal-overlay__profi {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.33);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-profi {
+    position: absolute;
+    background-color: rgba(15, 15, 16, 0.9);
+    width: 375px;
+    height: auto;
+    padding: 10px;
+}
+
+.modal-content a {
+    font-family: var(--fontsegundaria);
+    font-size: .8em;
+    font-weight: 500;
+    font-style: italic;
+    color: rgb(110, 108, 108);
+    margin-left: 25px;
+}
+
+.modal-content a:hover {
+    color: var(--cormg);
+}
+
+.modal-content p {
+    margin-bottom: 15px;
+}
+
+@keyframes scale-in {
+    0%{
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal-profi {
     -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
             animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
