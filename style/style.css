@@ -206,7 +206,7 @@ body {
 
 .div-intro__texto p {
     font-family: var(--fontsegundaria);
-    font-size: .83em;
+    font-size: .9em;
     color: var(--corwh);
     font-weight: 400;
     margin-left: 10px;
