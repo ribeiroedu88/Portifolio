@@ -172,6 +172,10 @@ body {
 /* 3. Intro
 /**********************************/
 
+.fas {
+    font-size: 1.7em;
+    padding: 0px 8px;
+}
 
 .div-intro {
     position: relative;
@@ -205,7 +209,7 @@ body {
 }
 
 .div-intro__texto p span {
-    font-size: 1.13em;
+    margin-left: 45px;
 }
 
 /**********************************/
