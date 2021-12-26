@@ -173,8 +173,13 @@ body {
 /**********************************/
 
 .fas {
-    font-size: 1.7em;
-    padding: 0px 8px;
+    font-size: 2em;
+    padding: 0px 5px;
+    opacity: .3;
+}
+
+.div-intro__texto p span {
+    margin-left: 25px;
 }
 
 .div-intro {
@@ -201,16 +206,14 @@ body {
 
 .div-intro__texto p {
     font-family: var(--fontsegundaria);
-    font-size: 1em;
+    font-size: .8em;
     color: var(--corwh);
     font-weight: 400;
-    margin-left: 20px;
+    margin-left: 10px;
     line-height: var(--entrelinha);
 }
 
-.div-intro__texto p span {
-    margin-left: 45px;
-}
+
 
 /**********************************/
 /* 4. Meu Perfil
